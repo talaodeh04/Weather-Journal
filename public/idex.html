@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather Journal</h1>
+        <div id="error-message"></div>
+
+        <!-- حقل إدخال الرمز البريدي -->
+        <input type="text" id="zip" placeholder="Enter zip code here">
+        
+        <!-- حقل إدخال الشعور -->
+        <textarea id="feelings" placeholder="How are you feeling today?"></textarea>
+        
+        <!-- زر التوليد -->
+        <button id="generate">Generate</button>
+
+        <!-- حاوية النتائج -->
+        <div id="entryHolder">
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+            <div id="weatherIcon"></div>
+        </div>
+
+        <!-- شريط التحميل -->
+        <div id="loading" class="loading"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
